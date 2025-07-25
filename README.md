@@ -71,6 +71,6 @@ TAVILY_API_KEY= ** ... **
 ## 🤗 바선생 로고 🤗
 
 <div style="display: flex; gap: 10px;">
-  <img src="photos/system.png" width="500"/>
-  <img src="photos/user.png" width="500"/>
+  <img src="photos/system.png" width="400"/>
+  <img src="photos/user.png" width="400"/>
 </div>
