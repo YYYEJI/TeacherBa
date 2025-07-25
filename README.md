@@ -70,4 +70,4 @@ TAVILY_API_KEY= ** ... **
 
 ## 🤗 바선생 로고 🤗
 ![system](photos/system.png)
-![user](user/system.png)
+![user](photos/user.png)
