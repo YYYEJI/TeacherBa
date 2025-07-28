@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DriveMentor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 20px 20px 40px;  
+      margin-top: -40px;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+      font-weight: bold;
+    }
+
+    .hero button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #1a252f;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 5px auto;
+      max-width: 720px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .glass .line {
+      font-size: 20px;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      margin-bottom: 16px;
+    }
+
+    .glass .line:nth-child(1) { animation-delay: 0.5s; }
+    .glass .line:nth-child(2) { animation-delay: 1.2s; }
+    .glass .line:nth-child(3) { animation-delay: 1.9s; }
+    .glass .line:nth-child(4) { animation-delay: 2.6s; }
+    .glass .line:nth-child(5) { animation-delay: 3.3s; }
+
+    .line.gap {
+      margin-top: 30px;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .features {
+      max-width: 1140px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .feature-grid {
+      display: flex;
+      gap: 100px;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      width: 260px;
+      text-align: center;
+    }
+
+    .feature img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .feature h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .feature p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.5;
+    }
+  
+    .logo-big {
+      text-align: center;
+      padding-top: 0px;
+      margin-bottom: 5px;
+    }
+    .logo-big img {
+      height: 200px;
+    }
+    </style>
+        
+</head>
+<body>
+
+  <section class="hero">
+  <div class="logo-big">
+    <img src="basonsaeng_logo_no_border.png" alt="바선생 로고">
+  </div>
+    <h2>당신의 운전을 도와드립니다.</h2>
+    <div class="glass">
+      <div class="line">바로 가는 길이 어색한 초보도,</div>
+      <div class="line">선뜻 도와주는 인공지능 도우미,</div>
+      <div class="line">생각보다 똑똑한 내 운전 멘토, 바선생!</div>
+      <div class="line gap">이제 초보운전, 혼자 하지 마세요.</div>
+      <div class="line">바선생이 옆자리에 탑니다.</div>
+    </div>
+    <a href="../chatbot_service/index.html">
+      <button>상담 시작하기</button>
+    </a>
+  </section>
+
+  <section class="features">
+    <h3>바선생의 특별한 기능</h3>
+    <div class="feature-grid">
+      <div class="feature">
+        <img src="https://img.icons8.com/office/96/law.png" alt="법률 분석">
+        <h4>AI 법률 분석</h4>
+        <p>사고, 위반 상황을 설명하면<br>AI가 간단한 법률 조언을 해줍니다.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/color/96/car-service.png" alt="차량 정비">
+        <h4>차량 정비 안내</h4>
+        <p>경고등, 이상 징후 등을 입력하면<br>정비 팁과 점검 포인트를 안내합니다.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/office/96/chat.png" alt="24시간 상담">
+        <h4>24/7 챗봇 상담</h4>
+        <p>언제든지 바선생과<br>실시간 상담이 가능합니다.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
